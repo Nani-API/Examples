@@ -1,5 +1,5 @@
 > # Get Example - Documentation
-> In this example aiohttp is used for the request, of course this can also be done with other packages. Basically it is just a url get request and then reading the text from the website.
+> Simple API requests with many output customizations, access to over 1k images and with a Private Token protection request.
 > 
-> ### Why should I read this?
-> To work with our API you need to understand how the api works and how to use it correctly.
+> ### What is the issue in this example?
+> These examples explain how you can import and use the API in your code in different languages presented by different users.
