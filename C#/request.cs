@@ -4,7 +4,7 @@
     using System.Net.Http.Json;
     using NaniAPI_Request_Example;
 
-    //Make the request and make the actually call.
+    /Make the request and make the actually call.
     using (var client = new HttpClient())
     {
         try
