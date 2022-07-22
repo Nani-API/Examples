@@ -2,13 +2,10 @@
 import aiohttp
 import asyncio
 
-# API token
-token = "token"
-
 # request
 async def nani(main_endpoint, sub_endpoint, response_type: 'json'):
     async with aiohttp.ClientSession() as session:
-        async with session.get(f'https://nani.red/api/{main_endpoint}/{sub_endpoint}/token={token}&type={response_type}/') as r:
+        async with session.get(f'https://nani.red/api/{main_endpoint}/{sub_endpoint}/&type={response_type}/') as r:
             js = await r.json()
             return str(js["response"])
 
@@ -19,3 +16,4 @@ async def main():
 # create async environment
 loop = asyncio.get_event_loop()
 loop.run_until_complete(main())
+        
