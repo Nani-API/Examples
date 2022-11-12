@@ -10,7 +10,7 @@ async def siesta(main_endpoint, sub_endpoint, response_type: 'text'):
         
 # print async environment
 async def main():
-    print(await nani("gif", "cuddle"))
+    print(await siesta("gif", "cuddle"))
 
 # create async environment
 loop = asyncio.get_event_loop()
