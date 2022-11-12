@@ -2,9 +2,9 @@
 import aiohttp
 import asyncio
 
-async def nani(main_endpoint, sub_endpoint, response_type: 'text'):
+async def siesta(main_endpoint, sub_endpoint, response_type: 'text'):
     async with aiohttp.ClientSession() as session:
-        async with session.get(f'https://nani.red/api/{main_endpoint}/{sub_endpoint}/&type={response_type}/') as r:
+        async with session.get(f'https://siesta.red/api/{main_endpoint}/{sub_endpoint}?type={response_type}') as r:
             text = await r.text()
             return str(text)
         
